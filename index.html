@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Form Estilizado</title>
+</head>
+<body id="body">
+    
+<div id="div1">
+    <fieldset id="tilapia">
+        <h2>Acarajé</h2>
+    <fieldset id="pacu"> 
+        <legend>Formulário de novos alunos</legend>
+        <form action="action.php">
+        <label for="nome" class="labels">Nome : </label>
+        <input type="text" name="nome" placeholder="Nome"> <br>
+        <label for="cpf" class="labels">CPF : </label>
+        <input type="number" name="cpf" id="cpf" placeholder="Digite apenas números"><br>
+        <label for="email" class="labels">Email : </label>
+        <input type="text" name="email" id="email"><br>
+        <label for="tel" class="labels">Telefone : </label>
+        <input type="text" name="tel" id="bliad"><br><br>
+
+        <p>Escolha seu turno</p>
+        <label for="manha">Manhã :</label>
+        <input type="radio" name="manha">
+        <label for="tarde">Tarde :</label>
+        <input type="radio" name="tarde">
+        <label for="noite">Noite :</label>
+        <input type="radio" name="noite"><br><br>
+        
+        <label for="suco" class="labels">Data de nascimento:</label>
+        <input type="date" name="suco" value="2000-01-01" min="2000-01-01" max="2023-13-09"><br><br>
+
+        <label for="cuco" class="labels">Selecione sua unidade:</label>
+        <select name="cuco" id="unidades">
+            <option value="Niterói">Niterói</option>
+            <option value="Tijuca">Tijuca</option>
+            <option value="Humaita">Humaita</option>
+            <option value="SC">São Cristóvão</option>
+            <option value="Jerusalém" selected>Jerusalém</option>
+        </select><br><br>
+
+        <p class="labels">Áreas de interesse</p><br>
+        <input type="checkbox" name="serpente">
+        <label for="serpente">Criação de gado</label><br>
+        <input type="checkbox" name="bemtevi">
+        <label for="bemtevi">Cuidar de bem-te-vis doentes</label><br>
+        <input type="checkbox" name="tabãodaserra">
+        <label for="tabãodaserra">Programação</label><br><br><br>
+
+
+        <input class="botoes" type="submit" value="Enviar">
+    </form>
+    </fieldset>
+    </fieldset>
+</div>    
+</body>
+</html>
